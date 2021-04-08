@@ -29,7 +29,7 @@ function countdown () {
   document.getElementById('time-left').innerHTML = m + ':' + s
 
   // prevents the timer going into negative time
-  while ((minutes <= 0) && (seconds <=0)) {
+  while ((minutes <= 0) && (seconds <= 0)) {
     x = clearInterval(x)
   }
 }
