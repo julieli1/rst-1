@@ -1,0 +1,14 @@
+#body {
+  background-color: #d9b3ff;
+}
+
+#titre {
+  text-align: center;
+  color: #5900b3;
+  border-style: solid;
+  border-color: #5900b3;
+}
+
+#start {
+  margin: 5px;
+}
