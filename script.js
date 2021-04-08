@@ -2,7 +2,10 @@
 let startmin = 0
 // converts minutes into seconds
 let time = startmin * 60
-let x
+let minutes = 0
+let seconds = 0
+// declares the interval variable
+let x = 0
 
 document.getElementById('start').addEventListener('click', interval)
 
@@ -14,6 +17,11 @@ function interval () {
 
   // updates the countown every one second
   let x = setInterval(countdown, 1000)
+  /*
+  if (time < 0) {
+    clearInterval(countdown)
+  }
+  */
 }
 
 function countdown () {
@@ -34,6 +42,6 @@ function countdown () {
 
   // prevents the timer going into negative time
   if ((minutes <= 0) && (seconds <= 0)) {
-    x = clearInterval(x)
+    clearInterval(x)
   }
 }
