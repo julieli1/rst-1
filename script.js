@@ -2,8 +2,8 @@
 let startmin = 0
 // converts minutes into seconds
 let time = startmin * 60
-const minutes = 0
-const seconds = 0
+let minutes = 0
+let seconds = 0
 // declares the interval variable
 let x = 0
 
@@ -21,9 +21,9 @@ function interval () {
 
 function countdown () {
   // calculates how many minutes are left
-  let minutes = Math.floor(time / 60)
+  minutes = Math.floor(time / 60)
   // modulus, division remainder
-  let seconds = time % 60
+  seconds = time % 60
 
   // updates the time negatively so that it's a countdown and not a timer
   time--
